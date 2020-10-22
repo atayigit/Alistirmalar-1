@@ -1,0 +1,12 @@
+#first I will calculate factorial 
+#then I will calculate e
+e = 1
+factorial=1
+#i choosed 100000 as close to infinity which will give us a precise answer.
+for n in range(0,10000):
+    factorial = factorial*(n+1)
+    e = e + (1/factorial)
+
+    
+print(e)
+
