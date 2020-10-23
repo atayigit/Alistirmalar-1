@@ -1,0 +1,7 @@
+a=0
+for r in range(1000,10000):
+    a=str(r)
+    if a[0]==a[3] and a[1]==a[2]:
+        a=a
+        print(a)
+         
