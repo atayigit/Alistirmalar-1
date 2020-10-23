@@ -1,0 +1,7 @@
+COUNT=0
+for n in range(10000,100000):
+    n=str(n)
+    if n[0]==n[4] and n[1]==n[3]:
+        COUNT+=1
+
+print("The answer is: ",COUNT)
