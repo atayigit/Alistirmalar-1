@@ -1,0 +1,6 @@
+count=0
+for n in range(1000,10000):
+    n=str(n)
+    if n[0] > n[3]:
+        count += 1
+print("The answer is",count)
