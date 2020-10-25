@@ -1,0 +1,47 @@
+#First we need to search the one digit numbers.
+#To include them in a list I created an empty list.
+one_digits=[]
+two_digits=[]
+three_digits=[]
+answer=[]
+for n in range(1,10):
+    if n<9:
+        one_digits.append(n)
+
+#Then we look at the two digit numbers.
+b=0
+c=0
+for m in range(10,100):
+    m=str(m)
+    b=m[0]
+    c=m[1] 
+    b=int(b)
+    c=int(c)
+    if c + b < 9:
+        m=int(m)
+        two_digits.append(m)
+
+        
+#At last we look at the 3 digit numbers.
+d=0
+e=0
+f=0
+for l in range(100,1000):
+    l=str(l)
+    d=l[0]
+    e=l[1]
+    f=l[2]
+    d=int(d)
+    e=int(e)
+    f=int(f)
+    if d + e +f < 9:
+       l=int(l) 
+       three_digits.append(l)    
+       
+#We have found all the answers ,right now we need  ton concatenate our lists.
+#I did this with'+' operator.Then I printed in the asked way.       
+answer=one_digits + two_digits + three_digits
+print(*answer,sep=" ")
+    
+
+
