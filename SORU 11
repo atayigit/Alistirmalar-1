@@ -1,0 +1,19 @@
+#125 200 350 sayisinin x sayisina bölümünden en büyük kalan.
+#Sayilari isimlendiriyoruz.
+number_1=125
+number_2=200
+number_3=350
+# x sayisini bilmiyoruz, x sayisi 125 200 ve 350 sayisini böldügü için bu sayilardan daha küçük olmali ki kalan olussun.
+# x sayisi 1 den baslayip 125 e kadar olan degerleri alabilir.
+# x sayisini bir döngü içinde yazip kalanlar arasindan en büyügünü alirsak cevabi buluruz.
+
+#Kalanlarin listesini olusturduk.
+kalanlar_listesi=[]
+
+for x in range (1,126):
+    if number_1 % x == number_2 % x and  number_1 % x == number_3 % x:
+       kalanlar_listesi.append(x)
+
+print("En büyük kalani veren x:"  ,max(kalanlar_listesi))       
+
+#EN BÜYÜK KALANI VEREN SAYI  75 OLDU. BUNA GÖRE KALAN 50 DIR.
