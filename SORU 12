@@ -1,0 +1,13 @@
+#Dogdugu yilin rakamlari toplami 2005 yilindaki yaşına esit.
+
+#bilinmeyenlerin sayisini azaltmak ve mantikli sonuclara ulasmak adina
+#soruda sorulan bireyin en erken 1900 dogmasi üzerinden bir döngü döndürdüm.
+for dg in range(1900,2005):
+
+    dg = str(dg)
+   
+    if int(dg[0])+int(dg[1])+int(dg[2])+int(dg[3])== 2005-(int(dg)):     
+      print("Soruda bahsedilen kisinin dogum tarihi:",dg)
+
+
+
