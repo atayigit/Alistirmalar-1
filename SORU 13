@@ -1,0 +1,15 @@
+#birlesmis iki sayi m olsun .Yani m 4 basamakli olsun.
+# bu demektir ki ,ilk iki basamak bizim ilk sayimiz
+# son iki basamak bizim ikinci sayimizdir.
+
+for m in range (1000,10000):
+    m=str(m)
+    ilk_say_ilk_basa=int(m[0])
+    ilk_say_ikin_basa=int(m[1])
+    ikin_say_ilk_basa=int(m[2])
+    ikin_say_ikin_basa=int(m[3])
+
+    algo=11*(10*(ilk_say_ilk_basa)+ilk_say_ikin_basa+10*(ikin_say_ilk_basa)+ikin_say_ikin_basa)
+
+    if int(m) == algo:
+        print("Sorunun cevabi:",m)
