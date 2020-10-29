@@ -1,0 +1,15 @@
+liste=[]
+çarpan_1=0
+çarpan_2=0
+for i in range (1,121213):
+    if 121212 % i == 0:
+        liste.append(i)
+
+
+#Küçükten büyüğe giden bir (sayinin) çarpanlar listesinde , listenin ortasinda
+#bulunan iki sayi, aralarindaki fark en küçük olan çarpanlardir. 
+#listenin uzunlugunu ogrenip ona göre ortadaki iki sayiyi bulmamiz gerekiyor.            
+çarpan_1=liste[(int(len(liste)/2))]
+çarpan_2=liste[(int(len(liste)/2)-1)]
+
+print("Birinci çarpan:{0},\nIkinci çarpan:{1}" .format(çarpan_1,çarpan_2))
