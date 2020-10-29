@@ -1,0 +1,18 @@
+a=(input("3 veya 4 basamakli bir sayi giriniz: "))
+
+if len(a)==3:
+    if a[0]==a[2]:
+        print("girdiginiz a sayisi,{}, palindromik bir sayidir.".format(a))
+    else:
+        print("girdiginiz a sayisi,{}, palindromik bir sayi degildir.".format(a))
+
+else:
+  
+    if a[0]==a[3] and a[1]==a[2]:
+        print("girdiginiz a sayisi,{},palindromik bir sayidir.".format(a))
+    else:
+        print("girdiginiz a sayisi,{}, palindromik bir sayi degildir.".format(a))
+            
+
+
+ 
